@@ -1,6 +1,6 @@
 //your JS code here. If required.
 const container=document.querySelector(".grid-container");
-
+const resetBtn=document.getElementById("reset_button");
 function createGridItems(){
 	for(let i=1;i<=9;i++){
 	 let div=document.createElement("div");
@@ -32,3 +32,6 @@ gridItems.forEach((grid)=>{
 	grid.style.backgroundColor="transparent";
 })
 }
+resetBtn.addEventListener("click",(e)=>{
+removeBgColor();
+})
