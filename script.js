@@ -25,7 +25,7 @@ form.addEventListener("submit",(e)=>{
 	let targetBox=document.getElementById(boxNo);
 	removeBgColor();
 	targetBox.style.backgroundColor=color;
-	// form.reset();
+	form.reset();
 });
 
 function removeBgColor(){
