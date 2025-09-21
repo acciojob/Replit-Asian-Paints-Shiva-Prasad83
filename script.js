@@ -7,14 +7,14 @@ function createGridItems(){
 	  let para=document.createElement("p");
 		para.innerText=i;
 	  div.id=`${i}`;
-		div.className="grid-items";
+		div.className="grid-item";
 		div.appendChild(para);
 	  container.appendChild(div);
 	}
 	
 }
 createGridItems();
-const gridItems=document.querySelectorAll(".grid-items");
+const gridItems=document.querySelectorAll(".grid-item");
 console.log(gridItems);
 const form=document.getElementById("form");
 form.addEventListener("submit",(e)=>{
