@@ -19,12 +19,13 @@ console.log(gridItems);
 const form=document.getElementById("form");
 form.addEventListener("submit",(e)=>{
 	e.preventDefault();
+	alert("submitted");
 	let boxNo=document.getElementById("block_id").value;
 	let color=document.getElementById("colour_id").value;
 	let targetBox=document.getElementById(boxNo);
 	removeBgColor();
 	targetBox.style.backgroundColor=color;
-	form.reset();
+	// form.reset();
 });
 
 function removeBgColor(){
@@ -33,5 +34,6 @@ gridItems.forEach((grid)=>{
 })
 }
 resetBtn.addEventListener("click",(e)=>{
+	e.preventDefault();
 removeBgColor();
 })
